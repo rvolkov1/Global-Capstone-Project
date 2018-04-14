@@ -6,38 +6,50 @@
 }
 
 body {
-  background-image: url(UN_Electricity_project_backgroundPic.jpg);
+  background-color: #F3E0DC;
 }
 
 .wrapper  {
   display: grid;
-  grid-template-rows: 1fr auto 1fr;
+  grid-template-rows: 1fr 1fr auto 1fr;
   grid-template-columns: 1fr 8fr;
   grid-template-areas:
-  "topbar topbar"
-  "sidebar body"
+  "topnav topnav"
+  "title title"
+  "body body"
   "footer footer"
 }
 
-.topbar {
-  grid-area: topbar;
+.topnav {
+  background-color: #8D8741;
+  padding-top: 16px;
+  grid-area: topnav;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-  "title search"
+  "nav search"
 }
 
-.title {
-  grid-area: title;
+.nav {
+  grid-area: nav;
   background-color: #8D8741;
-  font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    line-height: 46px;
-    font-size: 43px;
-    padding-top: 8px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+}
+
+.nav a {
+  color: #F3E0DC;
+  padding: 16px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.nav a.active {
+  background-color: #4285F4;
+  color: #F3E0DC;
+}
+
+.nav a.first {
+  margin-left: 40px;
 }
 
 .search  {
@@ -45,62 +57,53 @@ body {
   grid-area: search;
 }
 
-.sidebar {
-  background-color: #BC986A;
-  grid-area: sidebar;
+.title {
+  grid-area: title;
+  background-color: #F3E0DC;
+  font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 46px;
+    font-size: 43px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-  "sidelink1"
-  "sidelink2"
-  "sidelink3"
-  "sidelink4"
+  "maintitle"
+  "subtitle"
 }
 
-.sidebar a {
-  background-color: #BC986A;
-  text-align: center;
+.maintitle {
+  grid-area: maintitle;
 }
 
-.sidebar a:nth-child(odd) {
-  background-color: #FBEEC1;
-}
-
-.sidelink1 {
-  grid-area: sidelink1;
-}
-
-.sidelink2 {
-  grid-area: sidelink2;
-}
-
-.sidelink3 {
-  grid-area: sidelink3;
-}
-
-.sidelink4 {
-  grid-area: sidelink4;
+.subtitle {
+  grid-area: subtitle;
 }
 
 .body {
-  background-color: #DAAD86;
+  background-color: none;
   grid-area: body;
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
+  "title title"
   "body1 body2"
 }
 
 .body1 {
-  padding: 40px;
+  border-radius: 25px;
+  margin: 40px;
   background-color: #DAAD86;
   grid-area: body1;
 }
 
 .body2 {
-  padding: 40px;
+  margin: 40px;
   background-color: #DAAD86;
   grid-area: body2;
 }
