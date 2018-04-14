@@ -28,7 +28,7 @@ body {
 .nav {
   grid-area: nav;
   display: grid;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "topnav search"
 }
@@ -36,6 +36,11 @@ body {
 .topnav  {
   background-color: #8D8741;
   grid-area: topnav;
+}
+
+/* style links in topnav*/
+.topnav a {
+  padding: 15px;
 }
 
 .search  {
@@ -51,6 +56,23 @@ body {
 .body {
   background-color: #DAAD86;
   grid-area: body;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "body1 body2"
+}
+
+.body1 {
+  margin: 40px;
+  background-color: #DAAD86;
+  grid-area: body1;
+}
+
+.body2 {
+  margin: 40px;
+  background-color: #DAAD86;
+  grid-area: body2;
 }
 
 .footer {
