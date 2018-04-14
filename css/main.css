@@ -11,38 +11,33 @@ body {
 
 .wrapper  {
   display: grid;
-  grid-template-rows: 1fr 1fr auto 1fr;
+  grid-template-rows: 1fr auto 1fr;
   grid-template-columns: 1fr 8fr;
   grid-template-areas:
-  "title title"
-  "nav nav"
+  "topbar topbar"
   "sidebar body"
   "footer footer"
 }
 
-.title {
-  background-color: #8D8741;
-  grid-area: title;
-  text-align: center;
-
-}
-
-.nav {
-  grid-area: nav;
+.topbar {
+  grid-area: topbar;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
-  "topnav search"
+  "title search"
 }
 
-.topnav  {
+.title {
+  grid-area: title;
   background-color: #8D8741;
-  grid-area: topnav;
-}
-
-/* style links in topnav*/
-.topnav a {
-  padding: 15px;
+  font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 46px;
+    font-size: 43px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 
 .search  {
@@ -120,7 +115,8 @@ body {
 #659DBD blue
 #DAAD86 light tan
 #BC986A brownish tan
-#FBEEC1 white
+#FBEEC1 really light tan
+#F3E0DC cremay white
 
 pic links:
 https://community.simtropolis.com/forums/topic/45219-green-city/
