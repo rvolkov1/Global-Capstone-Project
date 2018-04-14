@@ -23,6 +23,8 @@ body {
 .title {
   background-color: #8D8741;
   grid-area: title;
+  text-align: center;
+
 }
 
 .nav {
@@ -49,8 +51,41 @@ body {
 }
 
 .sidebar {
-  background-color: #DAAD86;
+  background-color: #BC986A;
   grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "sidelink1"
+  "sidelink2"
+  "sidelink3"
+  "sidelink4"
+}
+
+.sidebar a {
+  background-color: #BC986A;
+  text-align: center;
+}
+
+.sidebar a:nth-child(odd) {
+  background-color: #FBEEC1;
+}
+
+.sidelink1 {
+  grid-area: sidelink1;
+}
+
+.sidelink2 {
+  grid-area: sidelink2;
+}
+
+.sidelink3 {
+  grid-area: sidelink3;
+}
+
+.sidelink4 {
+  grid-area: sidelink4;
 }
 
 .body {
@@ -64,13 +99,13 @@ body {
 }
 
 .body1 {
-  margin: 40px;
+  padding: 40px;
   background-color: #DAAD86;
   grid-area: body1;
 }
 
 .body2 {
-  margin: 40px;
+  padding: 40px;
   background-color: #DAAD86;
   grid-area: body2;
 }
