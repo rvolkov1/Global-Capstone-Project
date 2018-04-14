@@ -38,6 +38,7 @@ body {
   background-color: #8D8741;
 }
 
+/*decorate links in the topnav*/
 .nav a {
   color: #F3E0DC;
   padding: 16px;
@@ -45,19 +46,24 @@ body {
   text-align: center;
 }
 
+/*change color of link when hovered over*/
+.nav a:hover {
+  background-color: #F3E0DC;
+  color: black;
+}
+
+/*set active link to be blue*/
 .nav a.active {
   background-color: #4285F4;
   color: #F3E0DC;
 }
 
+/*offset the links from the left edge of the screen*/
 .nav a.first {
   margin-left: 40px;
 }
 
-.nav a.hover {
-  background-color: #F3E0DC;
-  color: black;
-}
+
 
 .search  {
   background-color: #8D8741;
@@ -100,11 +106,12 @@ body {
   background-color: none;
   grid-area: body;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "title title"
   "body1 body2"
+  "howmade howmade"
 }
 
 .body1 {
@@ -121,6 +128,14 @@ body {
   padding: 10px;
   background-color: #DAAD86;
   grid-area: body2;
+}
+
+.howmade {
+  grid-area: howmade;
+  background-color: #DAAD86;
+  margin: 40px;
+  border-radius: 25px;
+  padding: 10px;
 }
 
 .footer {
