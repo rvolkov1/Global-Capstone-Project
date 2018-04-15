@@ -105,6 +105,7 @@ body {
 }
 
 .body {
+  border-bottom: solid 1px gray;
   background-color: none;
   grid-area: body;
   display: grid;
@@ -136,18 +137,33 @@ body {
 .imgcap {
   grid-area: imgcap;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-  "cap img"
+  "img1 cap img2"
 }
 
 .cap {
   grid-area: cap;
+  background-color: #F3E0DC;
+  padding-bottom: 90px;
 }
 
-.img {
-  grid-area: cityimg;
+.img1 {
+  grid-area: img1;
+}
+
+#US {
+  display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+#Africa {
   display: block;
     max-width: 100%;
     height: auto;
