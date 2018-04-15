@@ -71,6 +71,7 @@ body {
 }
 
 .title {
+  border-bottom: solid 1px gray;
   grid-area: title;
   background-color: #F3E0DC;
   font-family: 'Playfair Display', serif;
@@ -111,6 +112,7 @@ body {
   grid-template-areas:
   "title title"
   "body1 body2"
+  "cityimg cityimg"
   "howmade howmade"
 }
 
@@ -130,6 +132,12 @@ body {
   grid-area: body2;
 }
 
+.cityimg {
+  grid-area: cityimg;
+  height: 200px;
+  width: 200px;
+}
+
 .howmade {
   grid-area: howmade;
   background-color: #DAAD86;
@@ -137,6 +145,11 @@ body {
   border-radius: 25px;
   padding: 10px;
 }
+
+.howmade h2 {
+  text-align: center;
+}
+
 
 .footer {
   background-color: #FBEEC1;
@@ -153,7 +166,7 @@ body {
 
 pic links:
 https://community.simtropolis.com/forums/topic/45219-green-city/
-
+https://c-parity.com/smart-mobility-going-smart-green-and-safe/green-city/
 
 
 */
