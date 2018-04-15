@@ -174,7 +174,7 @@ body {
 #Africa {
   display: block;
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
 }
 
 .howmade {
@@ -191,6 +191,7 @@ body {
 
 
 .footer {
+  border-top: solid 1px gray;
   background-color: #FBEEC1;
   grid-area: footer;
 }
@@ -206,6 +207,9 @@ body {
 pic links:
 https://community.simtropolis.com/forums/topic/45219-green-city/
 https://c-parity.com/smart-mobility-going-smart-green-and-safe/green-city/
-
+https://geology.com/articles/satellite-photo-earth-at-night.shtml
+https://whyelectricitymatters.com/2017/10/06/great-news-afdb-issues-first-light-power-africa-bond/
+http://www.flanderstoday.eu/business/flemish-business-angels-support-energy-kiosks-africa
+http://www.bobfreling.com/cgi-bin/mt/mt-search.cgi?tag=Africa
 
 */
