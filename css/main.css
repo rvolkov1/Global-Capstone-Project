@@ -40,6 +40,7 @@ body {
 
 /*decorate links in the topnav*/
 .nav a {
+  text-decoration: none;
   color: #F3E0DC;
   padding: 16px;
   font-size: 17px;
