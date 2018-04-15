@@ -73,7 +73,8 @@ body {
 .title {
   border-bottom: solid 1px gray;
   grid-area: title;
-  background-color: #F3E0DC;
+  background-image: url(green-city.png);
+  background-repeat: no-repeat;
   font-family: 'Playfair Display', serif;
     font-weight: 900;
     line-height: 46px;
@@ -147,8 +148,9 @@ body {
 
 .img {
   grid-area: cityimg;
-  display: flex;
-  float: left;
+  display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .howmade {
