@@ -191,7 +191,7 @@ body {
 
 
 .footer {
-  border-top: solid 1px gray;
+  
   background-color: #FBEEC1;
   grid-area: footer;
 }
