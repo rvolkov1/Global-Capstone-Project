@@ -92,6 +92,7 @@ p {
   grid-template-areas:
   "maintitle"
   "subtitle"
+  "subtitlempty"
 }
 
 .maintitle {
@@ -105,6 +106,11 @@ p {
    font-weight: normal;
    line-height: 23px;
    padding: 20px;
+}
+
+.subtitlempty {
+  grid-area: subtitlempty;
+  padding-bottom: 34px;
 }
 
 .body {
