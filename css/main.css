@@ -76,7 +76,7 @@ p {
 .title {
   border-bottom: solid 1px gray;
   grid-area: title;
-  background-image: url(../img/green-city.png);
+  
   background-repeat: no-repeat;
   font-family: 'Playfair Display', serif;
     font-weight: 900;
