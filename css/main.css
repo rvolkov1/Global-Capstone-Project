@@ -76,7 +76,11 @@ p {
 .title {
   border-bottom: solid 1px gray;
   grid-area: title;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 01838bb5abed1c3ca0fb10d68e65b05e15180a21
   background-repeat: no-repeat;
   font-family: 'Playfair Display', serif;
     font-weight: 900;
