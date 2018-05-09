@@ -1,0 +1,185 @@
+
+/* default all pading and margin to 0px*/
+*   {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+
+}
+
+p {
+  font-size: 16px;
+}
+
+.wrapper  {
+  display: grid;
+  grid-template-rows: 1fr auto auto 1fr;
+  grid-template-columns: 1fr 8fr;
+  grid-template-areas:
+  "topnav topnav"
+  "display display"
+  "subdis subdis"
+  "footer footer"
+}
+
+.topnav {
+  background-color: #8D8741;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  grid-area: topnav;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "nav search"
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #8D8741;
+}
+
+/*decorate links in the topnav*/
+.nav a {
+  text-decoration: none;
+  color: #F3E0DC;
+  padding: 16px;
+  font-size: 17px;
+  text-align: center;
+}
+
+/*change color of link when hovered over*/
+.nav a:hover {
+  background-color: #F3E0DC;
+  color: black;
+}
+
+/*set active link to be blue*/
+.nav a.active {
+  background-color: #4285F4;
+  color: #F3E0DC;
+}
+
+/*offset the links from the left edge of the screen*/
+.nav a.first {
+  margin-left: 40px;
+}
+
+.search  {
+  background-color: #8D8741;
+  grid-area: search;
+}
+
+#display {
+  grid-area: display;
+  background-image: url(../img/ren-nrg-back6.jpg);
+  background-repeat: no-repeat;
+  height: 334px;
+}
+
+
+.titles {
+  grid-area: titles;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 46px;
+    font-size: 35px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.subtitle {
+  font-family: 'Alice', serif;
+   font-size: 18px;
+   font-weight: normal;
+   line-height: 23px;
+   padding: 20px;
+   text-align: center;
+}
+
+.subdis {
+  background-color: #F3E0DC;
+  grid-area: subdis;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "aboutlink solutionslink otherlinks"
+}
+
+.subdis h3 {
+  padding: 5%;
+}
+
+.subdis p {
+  padding-bottom: 5%;
+}
+
+.subdis img {
+  padding-top: 2%;
+}
+
+.linkalign {
+  padding: 5%;
+}
+
+.linkalign a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.aboutlink {
+  grid-area: aboutlink;
+  text-align: center;
+}
+
+.aboutlink:hover {
+  filter: brightness(20%);
+}
+
+.solutionslink {
+  grid-area: solutionslink;
+  text-align: center;
+}
+
+.solutionslink:hover {
+  filter: brightness(20%);
+}
+
+.otherlinks {
+  grid-area: otherlinks;
+  text-align: center;
+}
+
+.otherlinks:hover {
+  filter: brightness(20%);
+}
+
+.footer {
+  border-top: solid 1px gray;
+  background-color: #FBEEC1;
+  grid-area: footer;
+  box-shadow: 0 50vh 0 50vh #FBEEC1;
+}
+
+/*
+#8D8741 green
+#659DBD blue
+#DAAD86 light tan
+#BC986A brownish tan
+#FBEEC1 really light tan
+#F3E0DC cremay white
+pic links:
+
+home page pic
+https://images.unsplash.com/photo-1451847251646-8a6c0dd1510c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b087e70d55ab588d32bf982c2f281e2f&auto=format&fit=crop&w=889&q=80
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Franc
+*/
