@@ -20,8 +20,8 @@ p {
   grid-template-areas:
   "topnav topnav"
   "display display"
-  "subdis subdis"
-  "footer footer"
+  "body body"
+  "footer footer";
 }
 
 .topnav {
@@ -74,9 +74,14 @@ p {
 
 .display {
   grid-area: display;
-  background-image: url(../img/ren-nrg-back6.jpg);
+  background-image: url(../img/coal-ren-bg.jpg);
   background-repeat: no-repeat;
   height: 333px;
+}
+
+
+.titles {
+  grid-area: titles;
 }
 
 .title {
@@ -99,53 +104,30 @@ p {
    text-align: center;
 }
 
-.subdis {
+.body {
   background-color: #F3E0DC;
-  grid-area: subdis;
+  grid-area: body;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-  "aboutlink solutionslink otherlinks"
+  "body1 body2";
 }
 
-.subdis h3 {
-  padding: 5%;
+.body1 {
+  border-radius: 25px;
+  margin: 40px;
+  padding: 10px;
+  background-color: #DAAD86;
+  grid-area: body1;
 }
 
-.subdis p {
-  padding-bottom: 5%;
-}
-
-.subdis img {
-  padding-top: 2%;
-}
-
-.aboutlink {
-  grid-area: aboutlink;
-  text-align: center;
-}
-
-.aboutlink:hover {
-  background-color: #c4b4b0;
-}
-
-.solutionslink {
-  grid-area: solutionslink;
-  text-align: center;
-}
-
-.solutionslink:hover {
-  background-color: #c4b4b0;
-}
-
-.otherlinks {
-  grid-area: otherlinks;
-  text-align: center;
-}
-
-.otherlinks:hover {
-  background-color: #c4b4b0;
+.body2 {
+  border-radius: 25px;
+  margin: 40px;
+  padding: 10px;
+  background-color: #DAAD86;
+  grid-area: body2;
 }
 
 .footer {

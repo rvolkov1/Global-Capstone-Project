@@ -6,7 +6,8 @@
 }
 
 body {
-
+  /*background-image: url(UN_Electricity_project_backgroundPic.jpg);*/
+  background-color: #F3E0DC;
 }
 
 p {
@@ -19,8 +20,8 @@ p {
   grid-template-columns: 1fr 8fr;
   grid-template-areas:
   "topnav topnav"
-  "display display"
-  "subdis subdis"
+  "title title"
+  "body body"
   "footer footer"
 }
 
@@ -72,80 +73,73 @@ p {
   grid-area: search;
 }
 
-.display {
-  grid-area: display;
-  background-image: url(../img/ren-nrg-back6.jpg);
-  background-repeat: no-repeat;
-  height: 333px;
-}
-
 .title {
+  border-bottom: solid 1px gray;
+  grid-area: title;
+  background-image: url(../img/india-bg.jpg);
+  background-repeat: no-repeat;
   font-family: 'Playfair Display', serif;
     font-weight: 900;
     line-height: 46px;
     font-size: 35px;
-    padding-top: 30px;
+    padding-top: 8px;
     padding-bottom: 10px;
     padding-left: 20px;
     text-align: center;
+  height: 333px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "maintitle"
+  "subtitle"
+  "subtitlempty";
+}
+
+.maintitle {
+  grid-area: maintitle;
 }
 
 .subtitle {
+  grid-area: subtitle;
   font-family: 'Alice', serif;
    font-size: 18px;
    font-weight: normal;
    line-height: 23px;
    padding: 20px;
-   text-align: center;
 }
 
-.subdis {
-  background-color: #F3E0DC;
-  grid-area: subdis;
+.subtitlempty {
+  grid-area: subtitlempty;
+  padding-bottom: 34px;
+}
+
+.body {
+  background-color: none;
+  grid-area: body;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "aboutlink solutionslink otherlinks"
+  "title title"
+  "body1 body2"
+  "footer footer"
 }
 
-.subdis h3 {
-  padding: 5%;
+.body1 {
+  border-radius: 25px;
+  margin: 40px;
+  padding: 10px;
+  background-color: #DAAD86;
+  grid-area: body1;
 }
 
-.subdis p {
-  padding-bottom: 5%;
-}
-
-.subdis img {
-  padding-top: 2%;
-}
-
-.aboutlink {
-  grid-area: aboutlink;
-  text-align: center;
-}
-
-.aboutlink:hover {
-  background-color: #c4b4b0;
-}
-
-.solutionslink {
-  grid-area: solutionslink;
-  text-align: center;
-}
-
-.solutionslink:hover {
-  background-color: #c4b4b0;
-}
-
-.otherlinks {
-  grid-area: otherlinks;
-  text-align: center;
-}
-
-.otherlinks:hover {
-  background-color: #c4b4b0;
+.body2 {
+  border-radius: 25px;
+  margin: 40px;
+  padding: 10px;
+  background-color: #DAAD86;
+  grid-area: body2;
 }
 
 .footer {
@@ -165,8 +159,12 @@ p {
 #FBEEC1 really light tan
 #F3E0DC cremay white
 pic links:
-
-home page pic
-https://images.unsplash.com/photo-1451847251646-8a6c0dd1510c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b087e70d55ab588d32bf982c2f281e2f&auto=format&fit=crop&w=889&q=80
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Franc
+https://community.simtropolis.com/forums/topic/45219-green-city/
+https://c-parity.com/smart-mobility-going-smart-green-and-safe/green-city/
+https://geology.com/articles/satellite-photo-earth-at-night.shtml
+https://whyelectricitymatters.com/2017/10/06/great-news-afdb-issues-first-light-power-africa-bond/
+http://www.flanderstoday.eu/business/flemish-business-angels-support-energy-kiosks-africa
+http://www.bobfreling.com/cgi-bin/mt/mt-search.cgi?tag=Africa
+https://www.independent.co.uk/news/world/asia/air-pollution-in-china-killing-4000-people-every-day-10455409.html
+https://www.shutterstock.com/video/clip-2269382-stock-footage-air-pollution-coal-burning-power-plant-p.html
 */
