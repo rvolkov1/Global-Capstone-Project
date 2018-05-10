@@ -142,7 +142,7 @@ p {
 }
 
 .aboutlink:hover {
-  filter: brightness(20%);
+  background-color: #c4b4b0;
 }
 
 .solutionslink {
@@ -151,7 +151,7 @@ p {
 }
 
 .solutionslink:hover {
-  filter: brightness(20%);
+  background-color: #c4b4b0;
 }
 
 .otherlinks {
@@ -160,7 +160,7 @@ p {
 }
 
 .otherlinks:hover {
-  filter: brightness(20%);
+  background-color: #c4b4b0;
 }
 
 .footer {
