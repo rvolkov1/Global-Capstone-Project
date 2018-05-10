@@ -1,0 +1,163 @@
+
+/* default all pading and margin to 0px*/
+*   {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #F3E0DC;
+}
+
+p {
+  font-size: 16px;
+}
+
+.wrapper  {
+  display: grid;
+  grid-template-rows: 1fr auto auto 1fr;
+  grid-template-columns: 1fr 8fr;
+  grid-template-areas:
+  "topnav topnav"
+  "title title"
+  "body body"
+  "footer footer"
+}
+
+.topnav {
+  background-color: #8D8741;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  grid-area: topnav;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "nav search"
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #8D8741;
+}
+
+/*decorate links in the topnav*/
+.nav a {
+  text-decoration: none;
+  color: #F3E0DC;
+  padding: 16px;
+  font-size: 17px;
+  text-align: center;
+}
+
+/*change color of link when hovered over*/
+.nav a:hover {
+  background-color: #F3E0DC;
+  color: black;
+}
+
+/*set active link to be blue*/
+.nav a.active {
+  background-color: #4285F4;
+  color: #F3E0DC;
+}
+
+/*offset the links from the left edge of the screen*/
+.nav a.first {
+  margin-left: 40px;
+}
+
+.search  {
+  background-color: #8D8741;
+  grid-area: search;
+}
+
+.title {
+  border-bottom: solid 1px gray;
+  grid-area: title;
+  background-repeat: no-repeat;
+  font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 46px;
+    font-size: 35px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "maintitle"
+  "subtitle"
+  "subtitlempty"
+}
+
+.maintitle {
+  grid-area: maintitle;
+}
+
+.subtitle {
+  grid-area: subtitle;
+  font-family: 'Alice', serif;
+   font-size: 18px;
+   font-weight: normal;
+   line-height: 23px;
+   padding: 20px;
+}
+
+.subtitlempty {
+  grid-area: subtitlempty;
+  padding-bottom: 34px;
+}
+
+.body {
+  background-color: none;
+  grid-area: body;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "opt1 pic opt2"
+}
+
+.body h1 {
+  padding: 5%;
+}
+
+.body p {
+  padding-bottom: 5%;
+}
+
+.plink {
+  text-decoration: none;
+  color: blue;
+}
+
+.opt1 {
+  text-align: center;
+}
+
+.opt2 {
+  text-align: center;
+}
+
+
+.footer {
+  border-top: solid 1px gray;
+  background-color: #FBEEC1;
+  grid-area: footer;
+  box-shadow: 0 50vh 0 50vh #FBEEC1;
+  text-align: center;
+  padding-top: 1%;
+}
+
+/*
+#8D8741 green
+#659DBD blue
+#DAAD86 light tan
+#BC986A brownish tan
+#FBEEC1 really light tan
+#F3E0DC cremay white
+pic links:
+*/
