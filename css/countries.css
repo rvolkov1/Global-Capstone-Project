@@ -122,6 +122,10 @@ p {
   "body1 body2";
 }
 
+.body h2 {
+  text-align: center;
+}
+
 .body1 {
   border-radius: 25px;
   margin: 40px;
