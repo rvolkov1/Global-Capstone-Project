@@ -67,7 +67,7 @@ p {
   margin-left: 40px;
 }
 
-.display {
+.displayUS {
   grid-area: display;
   background-image: url(../img/coal-ren-bg.jpg);
   background-repeat: no-repeat;
@@ -77,6 +77,13 @@ p {
 .displayIn {
   grid-area: display;
   background-image: url(../img/india-bg.jpg);
+  background-repeat: no-repeat;
+  height: 333px;
+}
+
+.displayChi {
+  grid-area: display;
+  background-image: url(../img/three-gorges-dam2.jpg);
   background-repeat: no-repeat;
   height: 333px;
 }
