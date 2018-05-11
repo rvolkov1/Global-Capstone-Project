@@ -207,6 +207,11 @@ p {
   padding-top: 1%;
 }
 
+.footer a {
+  text-decoration: none;
+  color: blue;
+}
+
 /*
 #8D8741 green
 #659DBD blue
