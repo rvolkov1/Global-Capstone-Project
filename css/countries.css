@@ -79,6 +79,12 @@ p {
   height: 333px;
 }
 
+.displayIn {
+  grid-area: display;
+  background-image: url(../img/india-bg.jpg);
+  background-repeat: no-repeat;
+  height: 333px;
+}
 
 .titles {
   grid-area: titles;
