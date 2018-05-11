@@ -88,6 +88,14 @@ p {
   height: 333px;
 }
 
+.displayGS {
+  grid-area: display;
+  background-image: url(../img/offshore-wind-farm.jpg);
+  background-repeat: no-repeat;
+  height: 333px;
+  /*https://www.siemens.com/press/pool/de/pressebilder/2009/renewable_energy/300dpi/ERE20080806-10_300dpi.jpg*/
+}
+
 .titles {
   grid-area: titles;
 }
