@@ -150,6 +150,20 @@ p {
   text-align: center;
 }
 
+.parabody {
+  background-color: #F3E0DC;
+  grid-area: body;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "body1 body1";
+}
+
+.parabody h2 {
+  text-align: center;
+}
+
 .body1 {
   border-radius: 25px;
   margin: 40px;
