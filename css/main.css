@@ -20,7 +20,7 @@ p {
   grid-template-columns: 1fr 8fr;
   grid-template-areas:
   "topnav topnav"
-  "title title"
+  "display display"
   "body body"
   "footer footer"
 }
@@ -69,7 +69,6 @@ p {
 }
 
 .title {
-  border-bottom: solid 1px gray;
   grid-area: title;
   background-repeat: no-repeat;
   font-family: 'Playfair Display', serif;
@@ -86,7 +85,6 @@ p {
   grid-template-areas:
   "maintitle"
   "subtitle"
-  "subtitlempty"
 }
 
 .maintitle {
@@ -105,6 +103,13 @@ p {
 .subtitlempty {
   grid-area: subtitlempty;
   padding-bottom: 34px;
+}
+
+.displayAbout {
+  grid-area: display;
+  background-image: url(../img/about-bg.jpg);
+  background-repeat: no-repeat;
+  height: 333px;
 }
 
 .body {
@@ -153,12 +158,6 @@ p {
   padding-left: 140px;
 }
 
-#US {
-  display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .cap {
   border-radius: 25px;
   padding: 15px;
@@ -172,12 +171,6 @@ p {
   border-top: solid 1px gray;
   border-bottom: solid 1px gray;
   grid-area: img2;
-}
-
-#Africa {
-  display: block;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .howmade {
