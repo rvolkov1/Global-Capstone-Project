@@ -120,6 +120,15 @@ p {
   /*https://images.pexels.com/photos/414805/pexels-photo-414805.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940*/
 }
 
+.displayPerspectives {
+  grid-area: display;
+  background-image: url(../img/perspective-bg.jpg);
+  background-repeat: no-repeat;
+  height: 333px;
+  /*https://images.pexels.com/photos/112846/pexels-photo-112846.jpeg?auto=compress&cs=tinysrgb&h=650&w=940*/
+}
+
+
 .titles {
   grid-area: titles;
 }
@@ -187,6 +196,54 @@ p {
   background-color: #DAAD86;
   grid-area: body2;
 }
+
+.perspectivebody {
+  background-color: #F3E0DC;
+  grid-area: body;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "perspective1 perspective2"
+  "perspective3 perspective4";
+}
+
+.perspectivebody h2 {
+  text-align: center;
+}
+
+.perspective1 {
+  grid-area: perspective1;
+  border-radius: 25px;
+  margin: 40px;
+  padding: 10px;
+  background-color: #DAAD86;
+}
+
+.perspective2 {
+  border-radius: 25px;
+  margin: 40px;
+  padding: 10px;
+  background-color: #DAAD86;
+  grid-area: perspective2;
+}
+
+.perspective3 {
+  border-radius: 25px;
+  margin: 40px;
+  padding: 10px;
+  background-color: #DAAD86;
+  grid-area: perspective3;
+}
+
+.perspective4 {
+  border-radius: 25px;
+  margin: 40px;
+  padding: 10px;
+  background-color: #DAAD86;
+  grid-area: perspective4;
+}
+
 
 .footer {
   border-top: solid 1px gray;
