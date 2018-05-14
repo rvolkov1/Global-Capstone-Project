@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .wrapper  {
@@ -164,7 +164,7 @@ p {
   "body1 body2";
 }
 
-.body h2 {
+.body h2, h3 {
   text-align: center;
 }
 
