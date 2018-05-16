@@ -256,6 +256,10 @@ h3 {
   grid-area: perspective4;
 }
 
+.hangingindent {
+  padding-left: 44px ;
+  text-indent: -44px ;
+}
 
 .footer {
   border-top: solid 1px gray;
