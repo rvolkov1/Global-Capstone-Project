@@ -170,9 +170,10 @@ h3 {
   grid-area: body;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr auto;
   grid-template-areas:
-  "body1 body2";
+  "body1 body2"
+  "pdflink pdflink";
 }
 
 .body h2 {
@@ -207,6 +208,22 @@ h3 {
   padding: 10px;
   background-color: #DAAD86;
   grid-area: body2;
+}
+
+.pdflink {
+  border-radius: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: #DAAD86;
+  text-align: center;
+  grid-area: pdflink;
+}
+
+.pdflink a {
+  color: blue;
+  text-decoration: none;
 }
 
 .perspectivebody {
