@@ -140,6 +140,13 @@ h3 {
   /*https://images.pexels.com/photos/112846/pexels-photo-112846.jpeg?auto=compress&cs=tinysrgb&h=650&w=940*/
 }
 
+.displayBib {
+  grid-area: display;
+  background-image: url(../img/bib-bg.jpeg);
+  background-repeat: no-repeat;
+  height: 333px;
+  /*https://images.pexels.com/photos/95719/pexels-photo-95719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940*/
+}
 
 .titles {
   grid-area: titles;
