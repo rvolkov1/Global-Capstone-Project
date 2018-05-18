@@ -217,6 +217,11 @@ h3 {
   grid-area: body2;
 }
 
+.body2 a{
+  text-decoration: none;
+  color: blue;
+}
+
 .pdflink {
   border-radius: 25px;
   margin-left: 40px;
